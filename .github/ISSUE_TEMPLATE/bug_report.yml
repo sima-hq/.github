@@ -1,0 +1,43 @@
+name: بلاغ خلل
+about: الإبلاغ عن سلوك غير متوقع أو خطأ قابل لإعادة الإنتاج
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        استخدم هذا النموذج للأخطاء غير الأمنية فقط. للثغرات أو قضايا الخصوصية، اتبع SECURITY.md ولا تنشر التفاصيل علنًا.
+  - type: textarea
+    id: problem
+    attributes:
+      label: ما المشكلة؟
+      description: صف السلوك الفعلي باختصار ووضوح.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ما السلوك المتوقع؟
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: خطوات إعادة الإنتاج
+      description: أضف أقل خطوات كافية لإعادة المشكلة دون بيانات شخصية أو أسرار.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: السياق التقني
+      description: المستودع، الفرع أو الالتزام، البيئة، وأي معلومات ذات صلة.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: تحقق قبل الإرسال
+      options:
+        - label: لا يتضمن البلاغ أسرارًا أو مفاتيح أو بيانات شخصية.
+          required: true
+        - label: هذه ليست ثغرة أمنية حساسة أو قضية خصوصية تتطلب قناة خاصة.
+          required: true
