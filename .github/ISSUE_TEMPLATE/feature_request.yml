@@ -1,0 +1,29 @@
+name: اقتراح تحسين
+description: اقتراح قدرة أو تحسين أو تغيير قابل للتقييم
+title: "[Idea] "
+labels: []
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: ما الحاجة؟
+      description: صف المشكلة أو الفرصة قبل وصف الحل.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: ما الاقتراح؟
+      description: صف التغيير المقترح وما الذي سيجعل النتيجة أفضل.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: الأثر المتوقع
+      description: من المستفيد؟ وما القرار أو التجربة التي تتحسن؟
+  - type: textarea
+    id: constraints
+    attributes:
+      label: قيود أو حدود مهمة
+      description: خصوصية، أمان، حقوق، تكلفة، توافق، أو أي حدود يجب الحفاظ عليها.
